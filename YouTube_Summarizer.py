@@ -1,21 +1,13 @@
+"""
+Project Overview
+The YouTube Transcript Summarizer is a Python-based application that fetches the transcript of a YouTube video using the YouTube Transcript API and then applies Natural Language Processing (NLP) techniques to generate a concise and meaningful summary. This tool helps users quickly understand the core content of long YouTube videos without watching them entirely.
 
-
-def get_video_id(video_link):
-   pass
-
-def get_video_transcript(video_id):
-   pass
-
-def get_video_summary(video_transcript):
-   pass
-
-def main():
-   video_link = input("Enter YouTube video link: ").strip()
-   video_id = get_video_id(video_link)
-   video_transcript = get_video_transcript(video_id)
-   video_sumamry = get_video_summary(video_transcript)
-   return video_sumamry
-
-if __name__ == "__main__":
-   main()
-
+Key Features
+   - Fetch YouTube Transcripts: Uses the youtube-transcript-api to retrieve the video’s transcript.
+   - Text Preprocessing: Cleans and prepares the transcript for analysis using spaCy or NLTK.
+   - Summarization:
+      - Extractive Summarization (selecting key sentences) using sumy or NLTK.
+      - Abstractive Summarization (generating new summaries) using transformers from Hugging Face.
+         - Named Entity Recognition (NER): Highlights key names, locations, and events using spaCy.
+         - User Input: Users provide a YouTube video URL, and the system returns a structured summary.
+"""
