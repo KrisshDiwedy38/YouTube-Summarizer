@@ -1,4 +1,4 @@
-import youtube_transcript_api
+
 
 def get_video_id(video_link):
    pass
@@ -16,9 +16,6 @@ def main():
    video_sumamry = get_video_summary(video_transcript)
    return video_sumamry
 
-
 if __name__ == "__main__":
    main()
 
-
-name = 'krissh'
